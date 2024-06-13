@@ -56,7 +56,7 @@ We used 761 regular expression patterns to collect candidate repositories contai
 
 ### Overview of SecretBench Metadata:
 
-We curated 818 public Github repositories and extracted 97,479 candidate secrets. Out of 97,479 secrets, we labeled 15,084 secrets as true secrets. Each secret is manually labeled by finding out whether the secret is actual or not after inspecting the secret and the source code context of the secret. Below we present an overview of the SecretBench data.
+We curated 818 public Github repositories and extracted 97,479 candidate secrets. Out of 97,479 secrets, we labeled 15,086 secrets as true secrets. Each secret is manually labeled by finding out whether the secret is actual or not after inspecting the secret and the source code context of the secret. Below we present an overview of the SecretBench data.
 
 |Field Name|Description|Data Type|
 |--------|--------|--------|
@@ -73,7 +73,7 @@ We curated 818 public Github repositories and extracted 97,479 candidate secrets
 |end_column|End index of the secret in the end line.|Integer|
 |committer_email|Email address of the developer who committed the secret.|String|
 |commit_date|The timestamp of the commit. For example: 2018-10-24T21:22:19Z|TimeStamp|
-|label|The ground truth label of the secret. "True" for actual secret and "False" for fake/dummy secret.|Boolean|
+|label|The ground truth label of the secret. "Y" for actual secret and "N" for fake/dummy secret.|Boolean|
 |is_template|Flag to indicate if the secret is a placeholder such as "MY_PASSWORD" and "Place_Your_Token_Here". | Boolean|
 |in_url| Flag to indicate if the secret is part of URL such as "http://user:pwd@site.com".| Boolean|
 |entropy| Shannon entropy value of the secret.| Float|
